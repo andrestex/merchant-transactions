@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "e8a08a74-3120-4d5e-b519-691175893b32",
+		"name": "Tienda Nube",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4683452"
+	},
+	"item": [
+		{
+			"name": "Merchant Transations",
+			"item": [
+				{
+					"name": "CREATE TRANSACTION",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"value\": \"100\",\n    \"description\": \"T-Shirt Black/M\",\n    \"method\": \"debit_card\",\n    \"cardNumber\": \"3486\",\n    \"cardHolderName\": \"Fonsi Julian\",\n    \"cardExpirationDate\": \"04/28\",\n    \"cardCvv\": \"290\",\n    \"merchantCode\": \"4050\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3040/merchant-transations-api/v1/transactions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3040",
+							"path": [
+								"merchant-transations-api",
+								"v1",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TRANSACTION DATA",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3040/merchant-transations-api/v1/transactions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3040",
+							"path": [
+								"merchant-transations-api",
+								"v1",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET TRANSACTION",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3040/merchant-transations-api/v1/transactions/2a6d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3040",
+							"path": [
+								"merchant-transations-api",
+								"v1",
+								"transactions",
+								"2a6d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET MERCHANT TRANSACTIONS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3040/merchant-transations-api/v1/transactions/merchant/4050",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3040",
+							"path": [
+								"merchant-transations-api",
+								"v1",
+								"transactions",
+								"merchant",
+								"4050"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE TRANSACTION DATA",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3040/merchant-transations-api/v1/transactions/2a6d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3040",
+							"path": [
+								"merchant-transations-api",
+								"v1",
+								"transactions",
+								"2a6d"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Merchant Receivable",
+			"item": [
+				{
+					"name": "RECEIVABLE DATA",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3040/merchant-transations-api/v1/receivables",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3040",
+							"path": [
+								"merchant-transations-api",
+								"v1",
+								"receivables"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE RECEIVABLE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3040/merchant-transations-api/v1/receivables",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3040",
+							"path": [
+								"merchant-transations-api",
+								"v1",
+								"receivables"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET RECEIVABLE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3040/merchant-transations-api/v1/receivables/c18e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3040",
+							"path": [
+								"merchant-transations-api",
+								"v1",
+								"receivables",
+								"c18e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

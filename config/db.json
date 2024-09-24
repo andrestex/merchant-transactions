@@ -1,0 +1,84 @@
+{
+  "transactions": [
+    {
+      "id": "930f",
+      "value": "100",
+      "description": "T-Shirt Black/M",
+      "method": "debit_card",
+      "cardNumber": "3486",
+      "cardHolderName": "Fonsi Julian",
+      "cardExpirationDate": "04/28",
+      "cardCvv": "290",
+      "merchantCode": "4040",
+      "createdAt": "2024-09-24T02:48:08.378Z"
+    },
+    {
+      "id": "74c0",
+      "value": "100",
+      "description": "T-Shirt Black/M",
+      "method": "debit_card",
+      "cardNumber": "3486",
+      "cardHolderName": "Fonsi Julian",
+      "cardExpirationDate": "04/28",
+      "cardCvv": "290",
+      "merchantCode": "4040",
+      "createdAt": "2024-09-24T02:51:00.225Z"
+    },
+    {
+      "id": "1bfe",
+      "value": "100",
+      "description": "T-Shirt Black/M",
+      "method": "debit_card",
+      "cardNumber": "3486",
+      "cardHolderName": "Fonsi Julian",
+      "cardExpirationDate": "04/28",
+      "cardCvv": "290",
+      "merchantCode": "4050",
+      "createdAt": "2024-09-24T03:09:43.899Z"
+    },
+    {
+      "id": "6e03",
+      "value": "100",
+      "description": "T-Shirt Black/M",
+      "method": "debit_card",
+      "cardNumber": "3486",
+      "cardHolderName": "Fonsi Julian",
+      "cardExpirationDate": "04/28",
+      "cardCvv": "290",
+      "merchantCode": "4050",
+      "createdAt": "2024-09-24T03:14:09.380Z"
+    }
+  ],
+  "receivables": [
+    {
+      "id": "c18e",
+      "transactionId": "930f",
+      "merchantCode": "4040",
+      "status": "paid",
+      "subtotal": "100",
+      "discount": "2",
+      "total": "98",
+      "create_date": "2024-09-24T02:48:08.450Z"
+    },
+    {
+      "id": "a2d1",
+      "transactionId": "74c0",
+      "merchantCode": "4040",
+      "status": "paid",
+      "subtotal": "100",
+      "discount": "2",
+      "total": "98",
+      "create_date": "2024-09-24T02:51:00.290Z"
+    },
+    {
+      "id": "5210",
+      "transactionId": "6e03",
+      "merchantCode": "4050",
+      "status": "paid",
+      "subtotal": "100",
+      "discount": "2",
+      "total": "98",
+      "create_date": "2024-09-24T03:14:09.427Z"
+    }
+  ]
+}
